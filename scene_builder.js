@@ -184,7 +184,7 @@ export class SceneBuilder
 		for (var i = 1; i <= numCloudTypes; i++)
 		{
 			this.textureLoader.load(
-				'/textures/clouds/cloud'+i+'/cloud'+i+'.png',
+				'./textures/clouds/cloud'+i+'/cloud'+i+'.png',
 				_onCloudLoad
 				);
 		}
