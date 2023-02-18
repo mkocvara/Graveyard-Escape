@@ -1,0 +1,100 @@
+body { 
+	margin: 0; 
+}
+
+canvas { 
+	width: 100%; 
+	height: 100%; 
+}
+
+#loading-screen { 
+	width: 100%; 
+	height: 100%;
+	z-index: 2;
+	background-color: #222222;
+	position: absolute;
+}
+
+#loading-screen > p { 
+	color: #BBBBBB;
+	font-family: consolas;
+	font-size: 3.1rem;
+	text-align: center;
+	
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#game-finished-screen { 
+	width: 100%; 
+	height: 100%;
+	z-index: 2;
+	background-color: #BBBBBB;
+	position: absolute;
+	pointer-events: none;
+	opacity: 0;
+}
+
+.fade-in {
+	animation: fadein 5s;
+	animation-fill-mode: forwards;
+}
+@keyframes fadein { 0%{opacity:0} 100%{opacity:1} }
+@-moz-keyframes fadein { 0%{opacity:0} 100%{opacity:1} }
+@-webkit-keyframes fadein { 0%{opacity:0} 100%{opacity:1} }
+@-o-keyframes fadein { 0%{opacity:0} 100%{opacity:1} }
+@-ms-keyframes fadein { 0%{opacity:0} 100%{opacity:1} }
+
+#game-finished-screen > p { 
+	color: #222222;
+	font-family: consolas;
+	font-size: 4rem;
+	text-align: center;
+	
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#key { 
+	width: 10%; 
+	height: 5%;
+	z-index: 1;
+	pointer-events: none;
+	
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+#hint {
+	opacity: 0.5;
+	width: 25%;
+	height: 25%;
+	z-index: 1;
+	pointer-events: none;
+	
+	margin: auto;
+	position: absolute;
+	top: 5%;
+	right: 5%;
+}
+
+#hint > p {
+	color: #DDDDDD;
+	font-family: consolas;
+	font-size: 1rem;
+	text-align: left;
+	margin: 5px;
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+        <title>KF6018 - 19002175</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>        
+        <script src="https://threejs.org/build/three.js"></script>
+		<script src="lib/three-noise.js"></script>
+        <script type="module" src="script.js"></script>
+		
+		<div id="loading-screen">
+			<p>Building Graveyard...</p>
+		</div>
+		
+		<div id="game-finished-screen">
+			<p>Graveyard Escaped</p>
+		</div>
+		
+		<div id="hint">
+			<p>Move using WASD or arrow keys, look around using the mouse.</p>
+			<p>E - Pick up key / Open gate</p>
+			<p>+ - Increase movement speed</p>
+			<p>- - Decrease movement speed</p>
+			<br/>			
+			<p>Hit the num key or digit key to:</p>
+			<p>1 - Toggle flying</p>
+			<p>2 - Toggle collisions</p>
+			<p>3 - Toggle ambient light</p>
+			<p>4 - Toggle rain</p>
+			<p>5 - Toggle lightning</p>
+			<p>6 - Toggle infinite lightning</p>
+			<p>7 - Trigger a lightning strike</p>
+			<p>8 - Toggle wireframe</p>
+			<p>9 - Toggle this hint</p>
+		</div>
+		
+		<img src="./models/key/key.png" id="key" class="hidden" />
+    </body>
+</html> 

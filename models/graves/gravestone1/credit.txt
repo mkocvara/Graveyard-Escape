@@ -1,0 +1,3 @@
+"TombStone 1" by kazim saatci, used under the TurboSquid 3D Model License. Available: https://www.turbosquid.com/3d-models/free-tombstone1-3d-model/839227
+
+Textures applied and .glb file created in Blender.
