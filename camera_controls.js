@@ -188,7 +188,7 @@ export class FirstPersonCamera {
 				case 'Numpad5': 
 				case 'Digit5': // toggle lightning
 					this.sceneBuilder.disableLightning = !this.sceneBuilder.disableLightning;
-					console.info("Lightning "+(this.sceneBuilder.disableLightning ? "enabled." : "disabled."));
+					console.info("Lightning "+(!this.sceneBuilder.disableLightning ? "enabled." : "disabled."));
 					break;
 				case 'Numpad6': 
 				case 'Digit6': // toggle infinite lightning

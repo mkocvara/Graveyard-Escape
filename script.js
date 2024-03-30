@@ -14,6 +14,7 @@ const WORLD_SCALE = 1; // isn't properly implemented, but it's not important
 
 // INITIALISE ------------------
 var loading = true;
+var finished = false;
 
 // Setup and Renderer
 var renderer = new THREE.WebGLRenderer();
@@ -48,6 +49,9 @@ var iFrame = 0;
 
 function animate()
 {       
+	if (finished)
+		return;
+
 	requestAnimationFrame(animate);
 	const deltaTime = clock.getDelta();
 	
@@ -68,6 +72,7 @@ function animate()
 			
 			document.getElementById("game-finished-screen").classList.add("fade-in");
 			console.log("Game finished; refresh to play again.");
+			finished = true;
 			return;
 		}
 		

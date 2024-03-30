@@ -23,11 +23,15 @@ export class GameController
 		
 		this.keyDown = function ( event ) {
 			switch ( event.code ) {
-				case 'KeyE':
+				case 'KeyE': // pick up key / open gate
 					if (this.state == this.gameStates.searching)
 						this.tryPickUpKey()
 					else if (this.state == this.gameStates.keyFound)
 						this.tryOpenGate()
+					break;
+				case 'KeyK': // teleport to key
+					this.player.position.x = this.key.position.x;
+					this.player.position.y = this.key.position.y;
 					break;
 			}
 		}
