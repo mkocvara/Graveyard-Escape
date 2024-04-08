@@ -1,5 +1,5 @@
 # Graveyard-Escape
-This is a procedurally generated 3D scene made in THREE.js depicting a graveyard on a stormy night. Created for a Computer Graphics university module at the end of 2022. As an assessment submission, it has been marked 86% (first class in UK University marking).
+This is a procedurally generated 3D scene made in [THREE.js](https://threejs.org/) depicting a graveyard on a stormy night. Created for a level 6 Computer Graphics University module at the end of 2022. As an assessment submission, it has been marked 86% (first class in UK University marking).
 
 The application produced is the scene of a graveyard at a dark night. A few lanterns illuminate most of the area, with lightning revealing the rest. Trees and a variety of graves create environment surrounding a mausoleum, with various items covering the ground. Most of the scene’s features are procedurally generated. A minigame is included to find a key and open the gate. The scene is intended to be viewed from the perspective of an individual within the graveyard.
 
